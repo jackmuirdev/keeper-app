@@ -1,20 +1,22 @@
 import React from "react";
-import ReactDOM from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
 
-ReactDOM.render(
-    <div>
+function App() {
+    return (
         <div>
-            <Header />
+            <div>
+                <Header />
+            </div>
+            <div>
+                <Note />
+            </div>
+            <div>
+                <Footer />
+            </div>
         </div>
-        <div>
-            <Note />
-        </div>
-        <div>
-            <Footer />
-        </div>
-    </div>,
-    document.getElementById("root")
-);
+    );
+}
+
+export default App;
