@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import Note from "./Note";
+import notes from "../notes"
+import createNote from "./createNote"
 
 function App() {
     return (
@@ -10,7 +11,7 @@ function App() {
                 <Header />
             </div>
             <div>
-                <Note />
+                {notes.map(createNote)}
             </div>
             <div>
                 <Footer />
